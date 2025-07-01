@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { Wrench, Phone, Mail, MapPin, Facebook, Instagram, Linkedin, PaintBucket, Hammer, Monitor } from 'lucide-react';
 
 const Footer = () => {
@@ -55,7 +55,7 @@ const Footer = () => {
           <div className="grid lg:grid-cols-4 gap-8">
             {/* Brand Section */}
             <div className="lg:col-span-1">
-              <Link to="/" className="flex items-center space-x-3 mb-6">
+              <Link href="/" className="flex items-center space-x-3 mb-6">
                 <div className="p-2 bg-primary-600 rounded-lg">
                   <Wrench className="h-6 w-6 text-white" />
                 </div>
@@ -106,7 +106,7 @@ const Footer = () => {
                   {section.links.map((link, linkIndex) => (
                     <li key={linkIndex}>
                       <Link
-                        to={link.href}
+                        href={link.href}
                         className="text-secondary-200 hover:text-white transition-colors duration-200 flex items-center group"
                       >
                         <span className="group-hover:translate-x-1 transition-transform duration-200">
@@ -168,13 +168,13 @@ const Footer = () => {
 
             {/* Legal Links */}
             <div className="flex gap-6 text-sm">
-              <Link to="#" className="text-secondary-200 hover:text-white transition-colors">
+              <Link href="#" className="text-secondary-200 hover:text-white transition-colors">
                 Mentions légales
               </Link>
-              <Link to="#" className="text-secondary-200 hover:text-white transition-colors">
+              <Link href="#" className="text-secondary-200 hover:text-white transition-colors">
                 Confidentialité
               </Link>
-              <Link to="#" className="text-secondary-200 hover:text-white transition-colors">
+              <Link href="#" className="text-secondary-200 hover:text-white transition-colors">
                 CGV
               </Link>
             </div>
