@@ -12,6 +12,7 @@ const Navbar = () => {
     { name: 'Services', href: '/services' },
     { name: 'Portfolio', href: '/portfolio' },
     { name: 'Contact', href: '/contact' },
+    { name: 'Prendre RDV', href: '/booking' },
   ];
 
   const isActive = (href: string) => router.pathname === href;
