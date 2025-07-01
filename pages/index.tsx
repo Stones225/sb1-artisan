@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { Star, Award, Users, Calendar, ArrowRight, Wrench, PaintBucket, Hammer, Monitor, Grid3X3, Eye } from 'lucide-react';
 
 const Home = () => {
@@ -83,14 +83,14 @@ const Home = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
-                  to="/contact"
+                  href="/contact"
                   className="inline-flex items-center px-8 py-4 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
                 >
                   Devis gratuit
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
                 <Link
-                  to="/services"
+                  href="/services"
                   className="inline-flex items-center px-8 py-4 border-2 border-primary-600 text-primary-600 font-semibold rounded-lg hover:bg-primary-600 hover:text-white transition-all duration-300"
                 >
                   Nos services
@@ -248,14 +248,14 @@ const Home = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              to="/contact"
+              href="/contact"
               className="inline-flex items-center px-8 py-4 bg-white text-primary-600 font-semibold rounded-lg hover:bg-secondary-50 transition-all duration-300 transform hover:scale-105 shadow-lg"
             >
               <Calendar className="mr-2 h-5 w-5" />
               Demander un devis
             </Link>
             <Link
-              to="/portfolio"
+              href="/portfolio"
               className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-primary-600 transition-all duration-300"
             >
               Voir nos réalisations
